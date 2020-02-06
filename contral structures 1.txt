@@ -1,0 +1,253 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+Scanner a=new Scanner(System.in);
+ int x=a.nextInt();
+       int y=a.nextInt();
+      if(x==y)
+      {
+         System.out.println(x+" and "+y+" are equal");
+      }
+      else if (x>y)
+      {
+        System.out.println(x+" greater than "+y);
+      }
+      else
+      {
+            System.out.println(x+" less than "+y);;
+      }
+    }
+}
+
+
+import java.util.Scanner;
+class Main
+{
+public static void main(String args[])
+{
+ Scanner sc=new Scanner(System.in);
+      char ch=sc.next().charAt(0);
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+{
+System.out.println("Vowel");
+}
+else if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+    {
+System.out.println("Consonant");
+    }    else
+
+    {System.out.println("Not an alphabet");
+    }
+    }
+}
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        
+
+ Scanner sc=new Scanner(System.in);
+      int a=sc.nextInt();
+      if(a==100)
+      {
+        System.out.println("S");
+      }
+      else if(a>=90&&a<=99)
+      {
+        System.out.println("A");
+      }
+       else if(a>=80&&a<=89)
+      {
+        System.out.println("B");
+      }
+       else if(a>=70&&a<=79)
+      {
+        System.out.println("C");
+      }
+       else if(a>=60&&a<=69)
+      {
+        System.out.println("D");
+      }
+       else if(a>=50&&a<=59)
+      {
+        System.out.println("E");
+      }
+      else
+      {
+        System.out.println("F");
+      }
+
+
+    }
+}
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        
+   Scanner sc=new Scanner(System.in);
+      float x=sc.nextFloat();
+      float y=sc.nextFloat();
+      if(x==(y*12))
+        System.out.print("No profit nor loss");
+       else if(x>(y*12))
+         System.out.printf("Loss : Rs.%.2f",x-(y*12));
+       else
+     System.out.printf("Profit : Rs.%.2f",x-(y*12)); 
+
+    }
+}
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in); 
+    String type=sc.nextLine();
+    float tf=sc.nextInt();
+   float bf=sc.nextInt();
+   float hf=sc.nextInt();
+    if(type.equals("MSH"))
+    System.out.printf("%.2f",tf+hf);
+    else if(type.equals("MSDS"))
+    System.out.printf("%.2f",tf+bf);
+    else if(type.equals("MGSDS"))
+    System.out.printf("%.2f",bf+((150*tf)/100));
+   
+                       else if(type.equals("MGSH"))
+                        System.out.printf("%.2f",hf+((150*tf)/100));
+                        else
+                         System.out.print("Invalid");
+    }
+}
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+         Scanner in=new Scanner(System.in);
+      int a=in.nextInt();
+      int b=in.nextInt();
+      if(b<a)
+  {
+    a=100-a;
+    int c=a+b;
+System.out.println(c);
+  }
+  else
+  {
+ System.out.println(b-a);
+  }
+    }
+}
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner in=new Scanner(System.in);
+       int x=in.nextInt();
+       int y=in.nextInt();
+      int z=in.nextInt();
+      if(x<y && x<z)
+      {
+   System.out.println("L1");
+      }
+      else if(y<x && y<z)
+      {
+    System.out.println("L2");
+      }
+    else
+     System.out.println("L3");
+
+    }
+}
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+      Scanner ka =new Scanner(System.in);
+      int x=ka.nextInt();
+      int y=ka.nextInt();
+      int z=ka.nextInt();
+      String k=ka.next();
+      switch(k)
+      {
+        case "L1":
+          if(y<z)
+          {
+            System.out.println("L2");
+          }
+          else
+          {
+             System.out.println("L3");
+          }
+          break;
+          case "L2":
+          if(x<z)
+          {
+            System.out.println("L1");
+          }
+          else
+          {
+             System.out.println("L3");
+          }
+          break;
+          case "L3":
+          if(x<y)
+          {
+            System.out.println("L1");
+          }
+          else
+          {
+             System.out.println("L2");
+          }
+          break;
+         
+         
+    }
+}
+}
+
+    
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+      Scanner ob=new Scanner(System.in);
+      int a=ob.nextInt();  
+      int b=ob.nextInt();
+      int c=ob.nextInt();
+      int d=ob.nextInt();
+      int e=a/d;
+      int f=b/d;
+      int g=c/d;
+      if(e==1)
+      {
+       System.out.println("L1");
+      }else if(f==1)
+      { System.out.println("L2"); }
+      else if(g==1)
+      { System.out.println("L3"); }
+      else { System.out.println(0); }
+     
+    }}
+
+
+

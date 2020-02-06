@@ -1,0 +1,223 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner in=new Scanner(System.in);
+      int a=in.nextInt();
+      int b[]=new int[a];
+      for(int i=0;i<a;i++)
+      {
+        b[i]=in.nextInt();
+      }
+      System.out.println("Maximum element in the array is "+max(b,a));
+    }
+  public static int max(int array[],int n)
+  {
+    if(n==1)
+    {
+      return array[0];
+    }
+    else
+    {
+      return Math.max(array[n-1],max(array,n-1));
+    }
+  }
+}
+
+      
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner in=new Scanner(System.in);
+      int a=in.nextInt();
+      System.out.println("The factorial of "+a+" is "+fact (a));
+    }
+  public static int fact(int n)
+  {
+    if(n==1)
+    {
+      return n;
+    }
+    else
+    {
+     return n*fact(n-1);
+    }
+  }
+}
+
+
+ import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+      int c=fib(a);
+      System.out.println("The term "+ a+ " in the fibonacci series is "+ c);
+    }
+ static int fib(int n)
+  {
+  if (n==0 && n==1)
+return 1;
+   else
+     return n-2;
+ }
+}
+
+
+import java.util.Scanner;
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       Scanner sc=new Scanner(System.in);
+      int base=sc.nextInt();
+      int exp=sc.nextInt();
+      int p=power(base,exp);
+      System.out.println("The value of " + base + " power "+ exp +" is " +p);
+     
+    }
+  static int power(int base, int exp)
+  {
+    if(exp!=0)
+      return (base*power(base,exp-1));
+             else
+              return 1;
+              }
+             
+}
+
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner in=new Scanner(System.in);
+      int a=in.nextInt();
+      System.out.println("The sum of digits in "+a+" is "+sum(a));
+    }
+  public static int sum(int n)
+  {
+    if(n==0)
+    {
+      return n;
+    }
+    else
+    {
+      return (n%10+sum(n/10));
+    }
+  }
+}
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      int d=nod(n);
+      System.out.println("The number of digits in "+ n+" is "+ d);
+    }
+  static int nod(int n)
+  {
+    if((n/10)==0)
+      return 1;
+    else
+      return 1+nod(n/10);
+  }
+}
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+      int n2=sc.nextInt();
+     int gcd=gcd(n1,n2);
+     System.out.println("G.C.D of "+n1+" and " +n2+" is "+gcd);
+    }
+  static int gcd(int n1,int n2)
+  {
+   
+        if (n2 != 0)
+            return gcd(n2, n1 % n2);
+        else
+            return n1;
+  }
+}
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner aa=new Scanner(System.in);
+      int n=aa.nextInt();
+      int a[]=new int[n];
+      for(int i=0;i<n;i++)
+      {
+      a[i]=aa.nextInt();
+      }
+      System.out.println("The sum of the elements in the array is "+sod(a,n));
+    }
+  static int sod(int a1[],int n)
+  {
+     if (n <= 0)
+     {
+            return 0;
+     }
+    {
+        return (sod(a1, n - 1) + a1[n- 1]);
+    }
+  }
+}
+
+
+
+
+import java.util.Scanner;
+class Main
+{
+    static int sum(int a[],int n)
+    {
+      if(n<0)
+      {
+        return 0;
+      }
+      else
+      {
+        if(a[n]%2==0)
+        {
+          return a[n]+sum(a,n-1);
+      }
+        else
+        {
+          return sum(a,n-1);
+        }
+    }  }
+    public static void main(String args[])
+    {
+      Scanner ob=new Scanner(System.in);
+      int n=ob.nextInt();
+      int a[]=new int[20];
+      for(int i=0;i<n;i++)
+      {
+        a[i]=ob.nextInt();
+      }
+      System.out.println("Sum of even numbers "+sum(a,n));
+    }
+}
+
+
