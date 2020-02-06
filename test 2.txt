@@ -1,0 +1,31 @@
+Type your code here
+import java.util.Scanner;
+import java.lang.Math;
+class Main
+{
+	public static void main(String args[])
+	{
+		int a=2,b=3,c=6,d,i,e,f;
+		Scanner sc=new Scanner(System.in);
+					
+						System.out.print(b);
+
+						System.out.print(c);
+		for(i=0;i1;i++)
+		{
+						d=c2;
+			e=d2;
+			f=e2;
+		System.out.print(a+,+b,+c,+d,+e,+f);
+			System.out.print(d);
+
+		System.out.print(e);
+			System.out.print(f);
+		}
+		
+
+	}
+}
+int a=sc.nextInt();
+int b=sc.nextInt();
+		int c=sc.nextInt();

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+      int a[]=new int[100];
+      int i,j,temp;
+      Scanner sc=new Scanner(System.in);
+      for(i=0;i<5;i++)
+      {
+        for(j=i+1;j<5;j++)
+        {
+          if(a[i]>a[j])
+          {
+            temp=a[j];
+            a[j]=a[i];
+            a[i]=temp;
+            System.out.print(a[i]);
+          }
+        }
+      }
+            
+      //fill your code;
+    }
+}
