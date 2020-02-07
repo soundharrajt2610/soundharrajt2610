@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {int n,c;
+     Scanner sc=new Scanner(System.in);
+     n=sc.nextInt();
+      int a=n;
+      c=fact(a);
+      System.out.print("The factorial of"+" "+ n+" "+"is"+" "+c);
+    }
+      static int fact(int n)
+      {
+        if(n==0)
+        {
+          return 1;
+        }
+        else
+        {
+          return n*(fact(n-1));
+        }
+      }
+    }
+      
+
