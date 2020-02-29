@@ -1,0 +1,18 @@
+import java.util.*; 
+import java.lang.*; 
+ class Main{ 
+      
+   
+    public static int last(int n) 
+    { 
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        return (n % 100); 
+    } 
+       
+    public static void main(String argc[]) 
+    { 
+        int n = 234; 
+        System.out.println(last(n)); 
+    } 
+} 

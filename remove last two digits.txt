@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Main
+{
+  public static void main(String args[])
+  {
+    int n,m;
+    Scanner sc=new Scanner(System.in);
+    n=sc.nextInt();
+    m=n/100;
+    System.out.println(m);
+  }
+  }
