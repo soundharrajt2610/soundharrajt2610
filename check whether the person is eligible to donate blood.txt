@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Main
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int weight=sc.nextInt();
+float hemoglobin=sc.nextFloat();
+if((n>=18)&&(weight>=45)&&(hemoglobin>=5.5))
+{
+System.out.println("He or She can donate blood");
+}
+else
+System.out.println("He or She unable to donate blood");
+}
+}
