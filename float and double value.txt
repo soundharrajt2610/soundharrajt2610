@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+float n=sc.nextFloat();
+float m=sc.nextFloat();
+  
+  System.out.printf("%f\n",n);
+
+  System.out.printf("%f",m);
+}
+}
