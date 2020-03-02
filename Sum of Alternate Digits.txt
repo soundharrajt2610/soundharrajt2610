@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Main
+{
+ public static void main(String args[]) 
+ {
+  Scanner sc=new Scanner(System.in);
+   int a=sc.nextInt();
+   int d;
+   int r=0,t=0;
+   for(int i=2;a>0;i++) 
+   { 
+     if(i%2==1)
+     {
+       d=a%10;
+       a=a/10;
+       r=r+d;
+     }
+     else
+     {
+       d=a%10;
+       a=a/10;
+       t=t+d;
+     }
+   }
+      System.out.println(t);
+   System.out.println(r);
+ }
+}
