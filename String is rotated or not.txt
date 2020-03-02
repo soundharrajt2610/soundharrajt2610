@@ -1,0 +1,24 @@
+import java.util.*;
+class Main
+{
+  public static void main(String[]args)
+  {
+    Scanner g=new Scanner(System.in);
+   String str1=g.nextLine();
+    String str2=g.nextLine(); 
+    if (str1.length() != str2.length())
+       {  
+            System.out.print("Not rotated");
+        }  
+        String str3 = str1 + str1;  
+        if (str3.contains(str2))  
+        {
+            System.out.print("Rotated"); 
+        }
+        else  
+        {
+            System.out.print("Not rotated");  
+        }
+    }  
+ 
+  }
