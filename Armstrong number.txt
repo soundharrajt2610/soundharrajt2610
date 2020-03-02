@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,a,b, result = 0;
+        n=sc.nextInt();
+        a=n;
+        while (a!= 0)
+        {
+            b=a% 10;
+            result+=Math.pow(b,3);
+            a=a/10;
+        }
+        if(result == n)
+            System.out.println("Armstrong number");
+        else
+            System.out.print("Not an Armstrong number");
+    }
+}
+ 
+ 
